@@ -1,0 +1,77 @@
+@import url(https://fonts.google.com/specimen/Expletus+Sans?query=NTO);
+
+
+body{
+	height: 100%; 
+	font-family: 'Expletus Sans', cursive;
+	background-image: url(../assets/img/fondo1.jpg);
+  background-attachment: fixed;
+	background-size: cover;
+	}
+
+	
+/* Formulario*/
+
+.contact_form{  
+  width: 460px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  border-color: none;
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: rgb(255, 255, 255); 
+  padding-left: 30px; 
+}
+
+input{
+  background-color: rgb(255, 255, 255); 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: rgb(224, 172, 190); 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+textarea{
+  background-color:rgb(255, 255, 255); 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: rgb(224, 172, 190); 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+strong{
+  color: rgb(224, 172, 190); 
+}
+
+.formulario h2, h3{
+  text-align: center;
+  padding: auto;
+}
+
+p{
+  font-size: 20px; 
+  color: rgb(0, 0, 0); 
+}
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid rgb(173, 255, 47);
+}
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid rgb(173, 255, 47);
+}
+

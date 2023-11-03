@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="es">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TI contactos</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">      
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Expletus+Sans&family=Moon+Dance&display=swap" rel="stylesheet">
+        <link rel="stylesheet" style type=" text/css" href="./contacto.css">
+        <link rel="stylesheet" style type=" text/css" href="../style.css">
+    </head>
+
+    <body>  
+
+      <header>
+        
+        <div>
+          <a href="https://www.instagram.com/donsugarba/?hl=es" target="_blank">
+            <img src="../assets/img/logo.png" alt="Logo donsugarba" width="75px" height="75px" placeholder="donsugarba">
+          </a>
+        </div>
+        <nav>
+          <ul id="navbar">
+            <li><a href="../index.html" target="_self" >Home</a></li>
+            <li><a href="../PresentacionPersonal/personal.html" target="_self">Quienes somos</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>            
+        </nav>
+        <h1>DonSugarBa</h1>
+        
+
+      </header>
+
+  
+      <div class="contact_form">
+
+        <div class="formulario">      
+          <h2>Formulario de contacto</h2>
+          <h3>En breve nos contactaremos con vos</h3>
+          
+          <form action="mailto:donsugarba@gmail.com" method="post" enctype="text/plain">
+            <p>
+              <label for="nombre" class="">Nombre<strong>*</strong></label>
+              <input type="text" name="nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+            </p>
+              
+            <p>
+              <label for="email" class="">Email<strong>*</strong></label>
+              <input type="email" name="email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+            </p>
+            
+            <p>
+              <label for="telefone" class="">Teléfono</label>
+              <input type="tel" name="telefono" id="telefono" placeholder="Dejanos tu teléfono">
+            </p>    
+            
+            <p>
+              <label for="asunto" class="">Asunto<strong>*</strong></label>
+              <input type="text" name="asunto" id="assunto" required="obligatorio" placeholder="Titulo">
+            </p>    
+              
+            <p>
+              <label for="mensaje" class="">Mensaje<strong>*</strong></label>                    
+              <textarea name="mensaje" class="textarea" id="mensaje" required="obligatorio" placeholder="Comentanos..."></textarea> 
+            </p>                    
+              
+            <button type="submit" name="enviar" id="enviar">Enviar</button>
+
+            <p> <strong>*</strong>los campos son obligatorios.</p>          
+            
+          </form>
+
+        </div> 
+
+      </div>
+
+ 
+      <footer>
+
+        <div class="footer">
+          <a href="https://www.instagram.com/donsugarba/?hl=es" target="_blank">
+            <img src="../assets/img/instagram.png" alt="donsugarba" placeholder="donsugarba">
+          </a>
+        </div>
+          <p class="footer">copyright &copy;2023 by Rossmary Labarca</p>
+          <p class="footer"><img src="../assets/img/ubicacion.png">Jujuy 244, Neuquén-Argentina </p>
+        <button class="boton" onclick="location.href='../index.html'"><img src="../assets/img/home.png"></button>
+        
+    </footer>
+
+      
+      <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+      <script src="./contacto.js" async defer></script>
+      
+    </body>
+
+</html>
+
+
+ 

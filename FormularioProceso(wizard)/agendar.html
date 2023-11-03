@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="es">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TI comprar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">      
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Expletus+Sans&family=Moon+Dance&display=swap" rel="stylesheet">
+        <link rel="stylesheet" style type=" text/css" href="./agendar.css">
+        <link rel="stylesheet" style type=" text/css" href="..//style.css">
+        
+    </head>
+
+    <body>
+
+      
+
+      <header>
+        
+        <div>
+          <a href="https://www.instagram.com/donsugarba/?hl=es" target="_blank">
+            <img src="../assets/img/logo.png" alt="Logo donsugarba" width="75px" height="75px" placeholder="donsugarba">
+          </a>
+        </div>
+        <nav>
+          <ul id="navbar">
+            <li><a href="../index.html" target="_self" >Home</a></li>
+            <li><a href="../PresentacionPersonal/personal.html" target="_self">Quienes somos</a></li>
+            <li><a href="../FormularioContacto/contacto.html" target="_self">Contacto</a></li>
+          </ul>            
+        </nav>
+        <h1>DonSugarBa</h1>
+     
+      </header>
+
+    
+
+      <h2 class="h2"> AGENDE SU PEDIDO</h2>
+
+
+      <form action="" name="formulario" id= "formulario" class="formulario">
+
+        <ul class="progressbar">
+          <li class="progressbar_option active"> Regristro</li>
+          <li class="progressbar_option">Productos</li>
+          <li class="progressbar_option">Envío</li>
+          <li class="progressbar_option">Pago</li>
+        </ul>
+
+        <div class="fieldset">
+
+          <fieldset class="step active" id="step-1">
+
+            <h2>Cree su cuenta</h2>
+              <h3>Todos los campos son obligatorios</h3>
+
+            <label for="email">Email:</label>
+              <input name="email" type="email" id="email" required/>
+            <label  for="password">Password:</label>
+              <input type="password" name="password" id="password" minlength="6" required />
+            <label  for="password2">Confirm Password:</label>
+              <input type="password" name="password2" id="password2" minlength="6" required />
+ 
+            <button type="button" class ="next-btn" data-to_step="2" data-step="1" >
+              Siguiente
+            </button>
+
+          </fieldset>
+
+
+          <fieldset class="step" id="step-2">
+
+            <h2>Productos</h2>
+              <h3>Todos los campos son obligatorios</h3>
+
+            <label for="categoria">Categoría:
+              <select name="categoria" class="input"  id="categoria" required>
+                <option>TortasXL</option>
+                <option>Tortas(ind)</option>
+                <option>12 mini tartas</option>
+                <option>4 Tartas medianas</option>
+                <option>16 miniBrownies</option>
+                <option>8 mini Brownies</option>
+                <option>12 MiniPostres</option>
+                <option>15 MiniPostres</option>
+                <option>20 MiniPostres</option>
+                <option>12 MiniCheesecake</option>
+                </select>
+
+            </label>
+            <label for="cantidad">Cantidad:</label>
+              <input type="text" name="cantidad" id="cantidad" required>
+            <label for="fecha">Fecha:</label>
+              <input type="date"  name="start" id="start" value="2023-04-14"
+                 min="2023-05-01" max="2023-12-31" required>
+   
+            <button type="button" class= "back-btn" data-to_step="1" data-step="2" >Regresar</button>
+            <button type="button" class= "next-btn" data-to_step="3" data-step="2">Siguiente</button>
+
+            </fieldset>
+
+
+            <fieldset class="step" id="step-3">
+
+              <h2 >Dirección de Envío</h2>
+                <h3>Todos los campos son obligatorios</h3>
+ 
+              <label for="calle">Calle:</label>
+                <input type="text" name="calle" id="calle" required>
+              <label for="altura">Altura:</label>
+                <input type="number" name="altura" id="altura" required>
+              <label for="portero">Portero:</label>
+                <input type="text" name="portero" id="portero" required>
+
+              <button type="button" class= "back-btn" data-to_step="2" data-step="3" >Regresar</button>
+              <button type="button" class= "next-btn" data-to_step="4" data-step="3">Siguiente</button>
+
+            </fieldset>
+
+
+            <fieldset class="step" id="step-4">
+
+              <h2 >Medio de Pago</h2>
+                <h3>Seleccione una opción</h3>
+ 
+              <label for="mercadoPago">Mercado Pago (+54-911-555 33 33)</label>
+                <input type="checkbox" name="mercadoPago" id="mercadoPago">
+              <label for="transferencia">Transferencia (Alias: DON.SUGAR.BA)</label>
+                <input type="checkbox" name="transferencia" id="transferencia">
+              <label for="adjunto">Adjuntar archivo</label>
+                <input type="file" name="adjunto" id="adjunto" accept=".pdf,.jpg,.png" multiple > 
+   
+              <button type="button" class= "back-btn"  data-to_step="4" data-step="3">Regresar</button>
+              <button type="submit" class= "btn">Agendar</button>
+
+            </fieldset>
+  
+          </div>
+                  
+        </form> 
+
+        <form id="step-5">
+          <p>Resumen:</p>
+          <div id="summary"></div>
+          <a href="javascript:genPDF()">Crear pdf</a>
+        </form>
+
+        <footer>
+
+          <div class="footer">
+            <a href="https://www.instagram.com/donsugarba/?hl=es" target="_blank">
+              <img src="../assets/img/instagram.png" alt="donsugarba" placeholder="donsugarba">
+            </a>
+          </div>
+            <p class="footer">copyright &copy;2023 by Rossmary Labarca</p>
+            <p class="footer"><img src="../assets/img/ubicacion.png">Jujuy 244, Neuquén-Argentina </p>
+          <button class="boton" onclick="location.href='../index.html'"><img src="../assets/img/home.png"></button>
+          
+      </footer>
+     
+      
+      <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+      
+      <script src="./agendar.js"></script>
+      <script src="./jspdf.min.js" async defer></script>
+      
+
+    </body>
+
+</html>

@@ -1,0 +1,433 @@
+@import url(https://fonts.google.com/specimen/Expletus+Sans?query=NTO);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+
+body{
+	height: 100%; 
+	font-family: 'Expletus Sans', cursive;
+    background-color: white;
+	background-size: cover;
+	}
+/* barra de navegación */
+
+header {
+    background-color: rgb(255, 192, 203);
+    max-width: 100%;
+    height: 81px;
+    display: flex;
+	padding:5px;
+    }
+
+    .container nav {
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px;
+        background-color: rgb(255, 192, 203);
+        margin-bottom: 30px;
+        color: rgb(51, 51, 51);
+    }
+    
+    .nav-card {
+        display: none;
+    }
+    
+    .container nav button {
+        display: none;
+    }
+    
+    .nav-card li {
+        list-style: none;
+        padding: 10px;
+        font-size: 10px;
+    }
+    
+    .container nav i:hover > .buy-card {
+        width: 400px;
+        height: auto;
+        position: absolute;
+        right: 0;
+        background-color:rgb(255, 192, 203);
+    }
+    
+    .container nav i:hover .nav-card {
+        font-size: 10px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10px 0 10px;
+        border-bottom: solid thin rgb(225, 225, 225);
+    }
+    
+    .container nav i:hover .buy-card > button {
+        display: block;
+        width: 60%;
+        padding: 10px;
+        margin: 10px auto;
+        background-color: transparent;
+        border: solid thin rgb(225, 225, 225);
+        color: rgb(73, 72, 72);
+        cursor: pointer;
+    }
+    
+    .container nav i:hover .buy-card > button:hover {
+        border: solid thin rgb(73, 72, 72);
+        transition: all .4s;
+    }
+    
+    .container nav i {
+        font-size: 50px;
+        cursor: pointer;
+    }
+
+#navbar li{
+	background-color: none;
+	text-align: center;
+	padding-top:5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+    list-style-type: none;
+	color: rgb(0, 0, 0);
+	font-size: 20px;
+	display: inline;
+	}
+
+#navbar li a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	}
+
+#navbar li a:hover{
+    background-color: rgb(214, 197, 197);
+	}
+
+h1{
+  
+	text-align: center;
+    margin-top: auto;
+    margin-left:auto;
+    margin-bottom: auto;
+    margin-right: auto;
+	font-family: 'Dancing Script', cursive;
+	font-size: 60px;
+	color: rgb(0, 0, 0);
+	}
+
+
+
+button {
+    text-align: center;
+    background: rgb(206, 137, 183);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 5px;
+    }
+
+
+    /* carrusel */
+
+.carrusel{
+    display: flex;
+    position: relative;
+    align-items: center;
+    }
+          
+.carrusel i{
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: rgb(52, 63, 79);
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+    }
+
+.carrusel i:active{
+    transform: translateY(-50%) scale(0.9);
+    }
+
+.carrusel i:hover{
+    background: rgb(242, 242, 242);
+    }
+
+.carrusel i:first-child{
+    left: -22px;
+    display: none;
+    }
+          
+.carrusel i:last-child{
+    right: -22px;
+    }
+
+.carrusel .slide{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    }
+
+.slide.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+    }
+
+.slide.dragging img{
+    pointer-events: none;
+    }
+          
+.slide img{
+    height: 300px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 3);
+    }
+          
+.slide img:first-child{
+    margin-left: 0px;
+    }
+          
+  @media screen and (max-width: 900px) {
+      .slide img{
+      width: calc(100% / 2);
+          }
+      }
+         
+  @media screen and (max-width: 550px) {
+      .slide img{
+      width: 100%;
+        }
+      }
+
+/* contenido principal(section) */
+
+
+h2{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+	font-size: 60px;
+    }
+
+p{
+    font-size: 20px; 
+    color: rgb(0, 0, 0); 
+    text-align: justify;
+    }
+
+.card{
+    max-width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    }
+
+.cardPerfil{
+    width: 310px;
+    padding: 20px;    
+    }
+
+.cardPerfil:hover{
+    border: solid rgb(3, 133, 255) 2px;
+    }
+
+.cardPerfil .boton{
+    text-align: right;
+    }
+    
+
+
+.cardPerfil img{
+    width:200px;
+    height:200px;
+    border-radius:160px;
+    border:5px solid rgb(255, 255, 255);
+    }
+
+.cardDescripcion{
+    text-align: justify;
+    }
+
+.ir-arriba{
+    position:fixed; 
+    bottom: 100px; 
+    right: 20px;
+}
+
+      /* galería  inferior */
+
+.galeria{
+
+    display: flex;
+    justify-content:center;   
+    }
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding-left: 5px; 
+    padding-right: 5px;   
+    }
+
+.img {
+    object-fit: cover;
+    width: 100%;
+   height: 300px;
+    border-radius: 10px;          
+    }
+ 
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 33px;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    }
+
+/* pie de página */
+
+footer{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: rgb(255, 192, 203);
+    max-width: 100%;
+    max-height: fit-content;
+    padding:10px;
+    }
+      
+.footer{
+    text-align: center;
+    font-size: small;
+	display:inline-flex;
+	width:auto;
+	height:50px;
+	margin:10px;
+    padding-top:5px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 5px;
+    overflow:hidden;
+    }
+
+.footer a {
+   text-decoration: none;
+  }
+
+.boton {
+    margin-left: auto;
+    cursor: pointer;
+    }
+
+   
+    /* información del carrito de compras*/
+
+    .lista_de_postres div {
+        display:none;
+        text-align: center;
+        padding: 10px;
+        border-top: solid thin gray;
+        text-justify: auto;
+    }
+    
+    .container nav i:hover .buy-card > .lista_de_postres div {
+        display: flex;
+    }
+    
+    .lista_de_postres img {
+        width: 80px;
+       
+    }
+    
+    .lista_de_postres h3 {
+        width: 100px;
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .lista_de_postres h4 {
+        width: 100px;
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .lista_de_postres p {
+        width: 50px;
+        font-size: 10px;
+        padding: 10px;
+    }
+    
+    .lista_de_postres p:nth-child(4) {
+        padding-left: 20px;
+    }
+    
+    .lista_de_postres p:last-child span {
+        background-color: red;
+        border-radius: 50%;
+        padding: 5px 10px;
+        color: #fff;
+    }
+    
+    /*Acomodar elementos en carrito*/
+    .contenedor-postres {
+        display: none;
+        text-align: center;
+        padding: 10px 0 0 0;
+        border-top: solid thin gray;
+    }
+    
+    .container nav i:hover .buy-card > .contenedor-postres  {
+        display: flex;
+    }
+    
+    .contenedor-postres img{
+        width: 100px;
+    }
+    
+    .contenedor-postres h3 {
+        width: 100px;
+        font-size: 10px;
+        padding: 10px;
+    }
+    
+    .contenedor-postres h4 {
+        width: 100px;
+        font-size: 10px;
+        padding: 10px;
+    }
+
+
+    .contenedor-postres p {
+        width: 50px;
+        font-size: 10px;
+        padding: 10px;
+    }
+    .contenedor-postres :nth-child(4) {
+        padding-left: 20px;
+    }
+    
+    .contenedor-postres p:last-child span {
+        background-color: red;
+        border-radius: 50%;
+        padding: 5px 10px;
+        color: #fff;
+    }
+      
