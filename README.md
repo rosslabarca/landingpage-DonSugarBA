@@ -9,6 +9,8 @@ Paso a paso:
 
 2. Visual Study Code
    *Página inicial
+   ![image](https://github.com/rosslabarca/landingpage-DonSugarBA/assets/100976050/11cb6c3f-ccf3-4923-95e2-d23bfe7ea24f)
+
    Index.html
    style.css
    script.js
@@ -16,5 +18,7 @@ Paso a paso:
    -   Presentación de la Organización
    -   Presentación de Personal
    -   Presentación Formulario de Proceso, estilo wizard
+     ![image](https://github.com/rosslabarca/landingpage-DonSugarBA/assets/100976050/e122c84c-f8ee-4c40-997f-86512aa97c48)
+
    -   Presentación Formulario de contacto
    
